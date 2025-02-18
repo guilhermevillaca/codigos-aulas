@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+    Crie um formulário HTML e use JavaScript para validar se os campos foram preenchidos.
+    Criar uma página web simples onde o usuário possa adicionar e remover tarefas de uma lista interativa, utilizando HTML, CSS e JavaScript.
+    Criar um campo de entrada (input) onde o usuário poderá digitar a tarefa.
+    Adicionar um botão "Adicionar" para incluir a tarefa na lista-->
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+
+        function validar() {
+            let nome = document.getElementById('nome').value;
+            let email = document.getElementById('email').value;
+            let senha = document.getElementById('senha').value;
+
+            if (nome == '' || email == '' || senha == '') {
+                alert('Preencha todos os campos');
+            } else {
+                alert('Formulário enviado com sucesso');
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+
+
+        <form>
+
+            <input type="text" name="nome" id="nome" placeholder="Nome">
+
+            <input type="email" name="email" id="email" placeholder="Email">
+
+            <input type="password" name="senha" id="senha" placeholder="Senha">
+
+            <input type="button" value="Enviar" onclick="validar()">
+        </form>
+    </div>
+    
+</body>
+</html>

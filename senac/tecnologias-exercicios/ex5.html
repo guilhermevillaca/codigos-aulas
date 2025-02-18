@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+        Criar uma página web simples onde o usuário possa adicionar e remover tarefas de uma lista interativa, utilizando HTML, CSS e JavaScript.
+    Criar um campo de entrada (input) onde o usuário poderá digitar a tarefa.
+    Adicionar um botão "Adicionar" para incluir a tarefa na lista
+    -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function adicionarTarefa() {
+            let tarefa = document.getElementById('tarefa').value;
+            let lista = document.createElement('li');
+            lista.innerHTML = tarefa;
+            document.querySelector('ul').appendChild(lista);
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+
+        <form>
+            <input type="text" name="tarefa" id="tarefa" placeholder="Digite a tarefa">
+            <input type="button" value="Adicionar" onclick="adicionarTarefa()">
+        </form>
+
+        <ul></ul>
+
+    </div>
+    
+</body>
+</html>

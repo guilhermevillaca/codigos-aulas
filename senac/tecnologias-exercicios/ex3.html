@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--\
+     Crie um botão que muda o texto de um parágrafo ao ser clicado.
+    
+    -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function changeText() {
+            document.querySelector('p').innerHTML = 'Texto alterado';
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">        
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure incidunt corrupti eum similique ullam fuga! Iure, dolorem. In fugiat illo animi deleniti voluptates iusto aspernatur eveniet corporis quam, excepturi nemo!</p>
+        
+        <button onclick="changeText()">Clique aqui</button>
+
+    </div>
+    
+</body>
+</html>
